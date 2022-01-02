@@ -1,0 +1,370 @@
+
+$body-bgcolor: #f9f7f1;
+$link-bgcolor: #2f2f2f;
+$border-color: #2f2f2f;
+$base-color1: #2f2f2f;
+$base-color2: #e95420;
+$base-font-family1: 'Playfair Display', serif;
+$base-font-family2: 'Droid Serif', serif;
+$base-font-size: 16px;
+
+body{
+    font-family: $base-font-family2;
+    font-size: 14px;
+    color: $base-color1;
+    background-color: $body-bgcolor;
+}
+
+article header, h2.header, .headline, h1.header, .red {
+    font-family: $base-font-family1;
+}
+
+// Article header
+article header, h2.header{
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
+
+h2.header {
+    margin-top: 0px;
+}
+
+article p {
+    padding: .5rem;
+}
+
+.headline {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+h1.header , .red{
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
+
+
+.red {
+    color: $base-color2;
+}
+
+.centered {
+    text-align: center;
+}
+
+.archiveblock {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+// Text Selection Color
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: $base-color2;
+}
+
+::selection {
+    color: white;
+    background: $base-color2;
+}
+
+// normal links
+a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: $link-bgcolor;
+}
+
+a:hover {
+    background-color: grey;
+    color: white;
+}
+
+
+// navigation links
+a.nav-link, a.headline {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+a.nav-link:hover, a.headline:hover {
+    text-decoration: none;
+    background-color: $link-bgcolor;
+    color: white;
+}
+
+
+// Articles
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: $base-font-size;
+}
+
+.head {
+    text-align: center;
+    position: relative;
+}
+
+.headerwrapper {
+}
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid $border-color;
+    border-top: 2px solid $border-color;
+    padding: 12px 0 12px 0;
+
+}
+.content{
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -.31em;
+    display: inline-block;
+    margin: 30px 2% 0 2%;
+
+
+}
+.columns{
+
+}
+
+.column{
+    font-size: $base-font-size;
+    line-height: 22px;
+    width: 17.5%;
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 50px;
+    transition: all .7s;
+}
+
+.column + .column { 
+  border-left: 1px solid $border-color;
+}
+
+.column .headline{
+    text-align: center;
+    line-height: normal;
+    font-family: $base-font-family1;
+    display: block;
+    margin: 0 auto;
+
+
+}
+
+.column .headline.hl1{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+
+}
+
+.column .headline.hl2{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+
+.column .headline.hl2:before{
+    border-top: 1px solid $border-color;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.column .headline.hl2:after{
+    border-bottom: 1px solid $border-color;
+    content: '';
+    width: 100px;
+    height: 13px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+
+.column .headline.hl3{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.column .headline.hl4{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.column .headline.hl4:before{
+    border-top: 1px solid $border-color;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.column .headline.hl4:after{
+    border-bottom: 1px solid $border-color;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+blockquote {
+    font-family: $base-font-family1;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    font-weight: 400;
+    display: block;
+    margin: 40px 0 40px 0;
+    font-feature-settings: "liga", "dlig";
+
+}
+blockquote:before{
+    border-top: 1px solid $border-color;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+blockquote:after{
+    border-bottom: 1px solid $border-color;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.column .figure {
+	  margin: 0 0 20px;
+}
+.column .figcaption{
+	font-style: italic;
+	font-size: 12px;
+}
+.media {
+    -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
+    filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+
+// Multicolumn Layout for Achive page
+.yearcontainer {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 40rem;
+}
+.yearletter {
+    font-family: $base-font-family1;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+}
+.yearlist {
+    column-count: 2;
+    line-height: 125%;
+    list-style: square inside;
+    padding-left: 1em;
+}
+
+// Figures, Images
+figure {
+    margin: 10px;
+    width: 100%;
+}
+
+figure img {
+    width: 80%;
+}
+
+figcaption {
+    font-style: italic;
+	font-size: 12px;    
+}
+
+// Footer
+footer {
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    display: table;
+}
+
+footer div {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 5px;
+}
+
+
+
+
+
+/*________________________________________________________________________________________________________________________________*/
+/*MEDIAQUERIES*/
+@media only all and (max-width: 1300px) {
+    .weatherforcastbox{
+        display: none;
+    }
+
+}
+@media only all and (max-width: 1200px) {
+    .column{
+        width: 31%;
+    }
+
+}
+    @media only all and (max-width: 900px) {
+    .column{
+        width: 47%;
+    }
+
+}
+@media only all and (max-width: 600px) {
+    .column{
+        width: 100%;
+    }
+	.column + .column {
+				border-left: none;
+      	border-bottom: 1px solid $border-color;
+	}
+    header{
+        max-width: 320px;
+        font-size: 60px;
+        line-height: 54px;
+        overflow: hidden;
+    }
+
+}

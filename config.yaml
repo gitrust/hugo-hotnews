@@ -1,0 +1,58 @@
+baseurl: ''
+languageCode: "en-us"
+title: "Hotnews Post"
+googleAnalytics: ""
+disqusShortname: ""
+preserveTaxonomyNames: true
+footnotereturnlinkcontents: ↩
+
+pygmentsUseClasses: false
+pygmentsCodeFences: false
+disableHugoGeneratorInject: true
+pluralizeListTitles: false
+minify: true
+
+taxonomies:
+    year: "year"
+    month: month
+
+permalinks:
+  post: /posts/:year/:month/:day/:slug/
+  year: /posts/:slug/
+  month: /posts/:slug/
+
+menu:
+  main:
+    - name: Home
+      url: "/"
+      weight: 1
+    - name: About
+      url: /about
+      weight: 3
+    - name: Archive
+      identifier: posts      
+      url: /posts
+      weight: 2
+
+params:
+  description: "Hotnews is a theme imitating a newspaper,  powered by Hugo."
+  FooterText: "© Hotnews Theme"
+
+frontmatter:
+  author: gitrust
+  github: 'https://github.com/gitrust/hugo-hotnews'
+  og_image: /images/####
+  sitename: ######
+  twitter: '######'
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+
+outputFormats:
+  RSS:
+    mediatype: application/rss
+    baseName: atom
+
+

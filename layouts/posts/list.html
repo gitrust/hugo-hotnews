@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div class="yearcontainer">
+  <h2 class="header">{{ .Title | upper }}</h2>
+{{ range .Pages.GroupByDate "2006" }}
+    <h3 class="yearletter">{{ .Key }}</h3>
+    <ol class="yearlist">
+{{ range .Pages }}
+      <li>
+        <time datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time> - 
+        <a href="{{ .RelPermalink }}">{{ .Title | upper }}</a>
+      </li>
+{{ end }}
+    </ol>
+{{ end }}
+</div>
+{{ end }}

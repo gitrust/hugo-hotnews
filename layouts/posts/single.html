@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="archiveblock">
+<article>
+  <h3>
+    <header>{{ .Title | upper }}</header>
+  </h3>
+  <h4 class="subtitle">
+   {{  .Params.subtitle }}
+   <!-- . | jsonify (dict "indent" " ")-->
+  </h4>
+  <p>
+{{ .Content }}
+  </p>
+  <p>
+    ({{ .Params.author }})
+  </p>
+</article>
+</div>
+{{ end }}

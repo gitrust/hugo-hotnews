@@ -1,0 +1,16 @@
+<div class="head">
+    <div class="headerwrapper">
+        <h1 class="header">
+            <img class="logo" src="/images/logo.png">
+            {{ .Site.Title }}
+        </h1>
+    </div>
+
+    <div class="subhead">
+        <nav id="nav" class="nav">
+            {{ range .Site.Menus.main }}
+            <a class="nav-link" href="{{ .URL }}">{{ .Name | upper | safeHTML }}</a>
+            {{ end }}
+        </nav> 
+    </div>
+</div>
