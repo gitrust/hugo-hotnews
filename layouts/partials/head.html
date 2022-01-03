@@ -2,16 +2,33 @@
     <meta charset="utf-8">
     {{ hugo.Generator }}
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="{{ .Permalink }}" />
+    
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href='{{ "images/favicon.ico" | relURL }}'/>
     <!-- Styles -->
     {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic">
-    <link rel="stylesheet" type="text/css" href="https://de.allfont.net/allfont.css?fonts=droid-serif"  />
-    <!-- Title -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,700,900,400italic,700italic,900italic"  />
+
+    <!-- Meta Information -->
     {{ $title := print .Site.Title " | " .Title }}
-    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    {{ if .IsHome }}
+      {{ $title = .Site.Title }}
+    
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ .Site.Params.description }}" />
+    <meta name="description" content="{{ .Site.Params.description }}" />
+    {{ end }}
+    <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta name="author" content="{{ .Site.Author.name }}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Title -->
     <title>{{ $title }}</title>
 </head>

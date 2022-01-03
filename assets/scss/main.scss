@@ -4,15 +4,26 @@ $link-bgcolor: #2f2f2f;
 $border-color: #2f2f2f;
 $base-color1: #2f2f2f;
 $base-color2: #e95420;
+$base-color3: #b4b1b1;
 $base-font-family1: 'Playfair Display', serif;
-$base-font-family2: 'Droid Serif', serif;
+$base-font-family2: 'Noticia Text', serif;
 $base-font-size: 16px;
+
 
 body{
     font-family: $base-font-family2;
     font-size: 14px;
     color: $base-color1;
     background-color: $body-bgcolor;
+}
+
+h1.header {
+    font-weight: 900;
+    font-size: calc(40px + 4vw);
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin: 40px;
 }
 
 article header, h2.header, .headline, h1.header, .red {
@@ -26,11 +37,11 @@ article header, h2.header{
     text-transform: uppercase;
     display: inline-block;
     line-height: 72px;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
 }
 
-h2.header {
-    margin-top: 0px;
+h4.subtitle {
+    margin-top: 0;
 }
 
 article p {
@@ -42,17 +53,6 @@ article p {
     font-size: 30px;
     text-transform: uppercase;
 }
-
-
-h1.header , .red{
-    font-weight: 900;
-    font-size: 80px;
-    text-transform: uppercase;
-    display: inline-block;
-    line-height: 72px;
-    margin-bottom: 20px;
-}
-
 
 .red {
     color: $base-color2;
@@ -66,6 +66,12 @@ h1.header , .red{
     width: 100%;
     max-width: 40rem;
     margin: 0 auto;
+}
+
+// Article metablock
+.meta {
+    color: $base-color3;
+    margin-bottom: 20px;
 }
 
 // Text Selection Color
@@ -203,7 +209,7 @@ h3 {
     font-weight: 700;
     font-size: 30px;
     box-sizing: border-box;
-    padding: 10px 0 10px 0;
+    //padding: 10px 0 10px 0;
 }
 
 .column .headline.hl3{

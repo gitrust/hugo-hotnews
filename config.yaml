@@ -1,13 +1,9 @@
 baseurl: ''
 languageCode: "en-us"
 title: "Hotnews Post"
-googleAnalytics: ""
-disqusShortname: ""
 preserveTaxonomyNames: true
 footnotereturnlinkcontents: ↩
 
-pygmentsUseClasses: false
-pygmentsCodeFences: false
 disableHugoGeneratorInject: true
 pluralizeListTitles: false
 minify: true
@@ -30,13 +26,16 @@ menu:
       url: /about
       weight: 3
     - name: Archive
-      identifier: posts      
+      identifier: posts
       url: /posts
       weight: 2
 
 params:
   description: "Hotnews is a theme imitating a newspaper,  powered by Hugo."
   FooterText: "© Hotnews Theme"
+
+  # How many articles should be displayed at the frontpage
+  paginate: 10
 
 frontmatter:
   author: gitrust

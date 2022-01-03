@@ -1,8 +1,10 @@
 [context.production.environment]
-  HUGO_VERSION = "0.71.1"
+  HUGO_VERSION = "0.91.2"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINTO = "true"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.68.1"
+  HUGO_VERSION = "0.91.2"
 
 [build]
   publish = "public"
@@ -15,6 +17,11 @@
 
 [[headers]]
   for = "/*.png"
+  [headers.values]
+  Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.webp"
   [headers.values]
   Cache-Control = "public, max-age=604800"
 

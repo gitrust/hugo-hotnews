@@ -1,19 +1,17 @@
 {{ define "main" }}
 <div class="archiveblock">
-<article>
-  <h3>
-    <header>{{ .Title | upper }}</header>
-  </h3>
-  <h4 class="subtitle">
-   {{  .Params.subtitle }}
-   <!-- . | jsonify (dict "indent" " ")-->
-  </h4>
-  <p>
-{{ .Content }}
-  </p>
-  <p>
-    ({{ .Params.author }})
-  </p>
-</article>
+  <article>
+    <h3>
+      <header>{{ .Title | upper }}</header>
+    </h3>
+    <div class="meta">
+      <span class="date"><time datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02, 2006" | upper }}</time></span>
+      / 
+      <span class="author">{{ .Params.author | upper }}</span>
+    </div>
+    <div class="contentblock">
+    {{- .Content -}}
+    </div>
+  </article>
 </div>
 {{ end }}
