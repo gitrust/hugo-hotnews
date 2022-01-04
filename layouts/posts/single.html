@@ -10,6 +10,9 @@
       <span class="author">{{ .Params.author | upper }}</span>
     </div>
     <div class="contentblock">
+      {{ if isset .Params "image" }}
+        {{ partial "image.html" . }}
+        {{ end }}
     {{- .Content -}}
     </div>
   </article>

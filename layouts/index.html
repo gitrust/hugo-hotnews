@@ -15,7 +15,15 @@
             </span>
           </p>
         </div>
+        {{ if isset .Params "image" }}
+        {{ partial "image.html" . }}
+        {{ end }}
+
+        {{ if isset .Params "image" }}
+        <p>{{slicestr .Summary 3 150 | markdownify }}</p>
+        {{ else }}
         <p>{{ .Summary }}</p>
+        {{ end }}
       </article>
     </div>
 {{ end }}

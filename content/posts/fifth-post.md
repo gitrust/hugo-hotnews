@@ -3,12 +3,13 @@ title: Local trains in Lisbon
 subtitle: Local trains in Lisbon
 date: "2021-04-17"
 author: ai-generated text
+image:
+    url: /images/lisbon-portugal.jpg
+    caption: Lisbon, Portugal
 tags:
     - train
     - lisbon
 ---
-
-{{< figure src="/images/lisbon-portugal.jpg" alt="" caption="Lisbon, Portugal" >}}
 
 Frequent local trains in Lisbon, Busquets, and São Paulo, as they do at the São Paulo train station, is also not far from the main hub of Lisbon.
 

@@ -46,6 +46,8 @@ h4.subtitle {
 
 article p {
     padding: .5rem;
+    text-align: justify;
+	text-align-last: none;
 }
 
 .headline {
@@ -307,12 +309,12 @@ blockquote:after{
 
 // Figures, Images
 figure {
-    margin: 10px;
-    width: 100%;
+    margin: 0;
+    //width: 100%;
 }
 
 figure img {
-    width: 80%;
+    width: 100%;
 }
 
 figcaption {

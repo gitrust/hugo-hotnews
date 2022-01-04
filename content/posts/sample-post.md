@@ -18,7 +18,3 @@ The researchers noted that if a large-sized tourist would visit a park or wildli
 The study also found that tourist visits to parks or wildlife corridors may increase the risk of human-caused wildlife problems. Wildlife protection advocates have said that allowing foreign tourists to live in more than one state will cause problems for tourism industry in certain parts of the country, and in some areas with fewer than two dozen residents, the researchers said.
 
 In a similar study, researchers at Texas A&M University reported on problems with small mammals in areas of the US that were largely closed to humans, a point that would likely become clear in a future report.
-
-
-{{< figure src="/images/lisbon-portugal.jpg" alt="" caption="Lisbon, Portugal" >}}
-
