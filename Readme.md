@@ -8,9 +8,26 @@ Simple [hugo](https://gohugo.io) [theme](https://themes.gohugo.io) imitating a n
 
 # Installation
 
-TODO
+The easiest to do the installation is using git.
+Simply go to your `themes` folder and clone this repository.
+
+```
+cd themes
+git clone https://github.com/gitrust/hugo-hotnews.git
+```
+
+Then head over to your site configuration (`config.toml` or `config.yml`) and specify the new theme.
+
+```
+theme = ["hugo-hotnews"]
+```
+
+Now restart your hugo server.
 
 # References
+
+I used ideas from following sites to build this theme. Images were
+taken from unsplash.com. With [Krita)(https://krita.org) I applied an artistic [filter)(https://docs.krita.org/en/reference_manual/filters/artistic.html) named `Halftone` to them.
 
 - https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/
 - https://codepen.io/silkine/pen/jldif
