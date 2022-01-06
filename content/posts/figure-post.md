@@ -1,10 +1,10 @@
 ---
-title: "Figure Post"
+title: "Why Duran Sekevin Was Blocked From Entering USA"
 subtitle: "a short sample subtitle"
 date: "2016-03-19"
 author: lorem ipsum
 image:
-    url: /images/new-york-building1.jpg
+    url: /images/high-rise-building.jpg
     caption: A highrise building
     alt: https://unsplash.com/photos/JBnsfnxNvAQ
 tags:
