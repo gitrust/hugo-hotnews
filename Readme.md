@@ -6,6 +6,10 @@ Simple [hugo](https://gohugo.io) [theme](https://themes.gohugo.io) imitating a n
 
 - A demo is available on https://hugo-hotnews.netlify.app/
 
+# Screenshot
+
+![Screenshot](screenshot.jpg)
+
 # Installation
 
 The easiest way to do the installation is using git.
