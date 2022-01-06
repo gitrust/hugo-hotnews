@@ -4,7 +4,7 @@ Simple [hugo](https://gohugo.io) [theme](https://themes.gohugo.io) imitating a n
 
 # Demo
 
-Coming soon...
+- A demo is available on https://hugo-hotnews.netlify.app/
 
 # Installation
 
