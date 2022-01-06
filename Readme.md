@@ -9,7 +9,7 @@ Simple [hugo](https://gohugo.io) [theme](https://themes.gohugo.io) imitating a n
 # Installation
 
 The easiest way to do the installation is using git.
-Simply go to your `themes` folder and clone this repository.
+Simply go to the `themes` folder of your hugo site and clone this repository.
 
 ```
 cd themes
