@@ -8,7 +8,7 @@ Simple [hugo](https://gohugo.io) [theme](https://themes.gohugo.io) imitating a n
 
 # Installation
 
-The easiest to do the installation is using git.
+The easiest way to do the installation is using git.
 Simply go to your `themes` folder and clone this repository.
 
 ```
@@ -27,7 +27,7 @@ Now restart your hugo server.
 # References
 
 I used ideas from following sites to build this theme. Images were
-taken from unsplash.com. With [Krita)(https://krita.org) I applied an artistic [filter)(https://docs.krita.org/en/reference_manual/filters/artistic.html) named `Halftone` to them.
+taken from unsplash.com. With [Krita](https://krita.org). I applied an artistic [filter](https://docs.krita.org/en/reference_manual/filters/artistic.html) named `Halftone` to them.
 
 - https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/
 - https://codepen.io/silkine/pen/jldif
