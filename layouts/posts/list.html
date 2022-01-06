@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<div class="yearcontainer">
+<div class="articlecontainer">
   <h2 class="header">{{ .Title | upper }}</h2>
 {{ range .Pages.GroupByDate "2006" }}
     <h3 class="yearletter">{{ .Key }}</h3>

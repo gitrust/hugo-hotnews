@@ -24,11 +24,15 @@ menu:
       weight: 1
     - name: About
       url: /about
-      weight: 3
+      weight: 4
     - name: Archive
       identifier: posts
       url: /posts
       weight: 2
+    - name: Tags
+      url: /tags
+      identifier: tags
+      weight: 3
 
 params:
   description: "Hotnews is a theme imitating a newspaper,  powered by Hugo."

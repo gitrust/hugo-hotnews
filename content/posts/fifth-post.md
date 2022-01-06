@@ -9,6 +9,7 @@ image:
 tags:
     - train
     - lisbon
+    - europe
 ---
 
 Frequent local trains in Lisbon, Busquets, and São Paulo, as they do at the São Paulo train station, is also not far from the main hub of Lisbon.

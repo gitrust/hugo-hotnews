@@ -6,6 +6,8 @@ date: "2001-03-03"
 tags:
     - cactus
     - mexico
+    - nature
+    - plant
 ---
 
 
