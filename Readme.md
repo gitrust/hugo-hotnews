@@ -1,6 +1,6 @@
 # Description
 
-Simple [hugo](https://gohugo.io) [theme](https://themes.gohugo.io) imitating a newspaper layout.
+Simple [hugo](https://gohugo.io) [theme](https://themes.gohugo.io) named `Hotnews` which imitates a newspaper layout.
 
 # Demo
 
