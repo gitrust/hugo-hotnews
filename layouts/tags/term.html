@@ -1,8 +1,7 @@
 {{ define "main" }}
 <div class="content">
   <div class="columns"></div>
-{{ $items := .Site.Params.paginate }}
-{{ range first $items (where .Site.RegularPages "Section" "posts") -}}
+{{ range  .Pages -}}
   {{ partial "article.html" . }}
 {{ end }}
 </div>

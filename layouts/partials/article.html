@@ -1,0 +1,23 @@
+<div class="column">
+  <article>
+    <div class="head">
+      <span class="headline hl1">
+        <a class="headline" href="{{ .RelPermalink }}">{{ .Title | upper }}</a>
+      </span>
+      <p>
+        <span class="headline hl4">
+          <time datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02, 2006"}}</time>
+        </span>
+      </p>
+    </div>
+    {{ if isset .Params "image" }}
+    {{ partial "image.html" . }}
+    {{ end }}
+
+    {{ if isset .Params "image" }}
+    <p>{{slicestr .Summary 3 150 | markdownify }}</p>
+    {{ else }}
+    <p>{{ .Summary }}</p>
+    {{ end }}
+  </article>
+</div>
