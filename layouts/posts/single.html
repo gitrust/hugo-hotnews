@@ -14,7 +14,7 @@
     <div class="meta">
       <span class="tags">
         {{ range .Params.tags }}
-          <a href="/tags/{{ . }}">{{ . | upper }}</a>
+          <a href="/tags/{{ . | urlize }}">{{ . | upper }}</a>
         {{ end }}
       </span>
     </div>
