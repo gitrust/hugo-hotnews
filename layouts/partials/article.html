@@ -15,7 +15,7 @@
     {{ end }}
 
     {{ if isset .Params "image" }}
-    <p>{{slicestr .Summary 3 150 | markdownify }}</p>
+    <p>{{slicestr .Summary 0 150 | markdownify }}</p>
     {{ else }}
     <p>{{ .Summary }}</p>
     {{ end }}
