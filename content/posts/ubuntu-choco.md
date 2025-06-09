@@ -1,11 +1,8 @@
 ---
 title: Ubuntu Chocolate
-subtitle: 
+subtitle: Ubuntu Chocolate
 date: "2023-02-16"
 author: ai-generated text
-image:
-    url:
-    caption:
 tags:
     - south-africa
     - chocolate
