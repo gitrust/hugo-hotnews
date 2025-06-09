@@ -39,3 +39,4 @@ taken from unsplash.com. Using [Krita](https://krita.org) I applied an artistic 
 - https://www.donarmuseum.nl/spelers/ (Year archive listing)
 - https://www.smashingmagazine.com/2019/01/css-multiple-column-layout-multicol/ (multi column configuration)
 - images from https://unsplash.com
+- https://css-irl.info/css-halftone-patterns/
