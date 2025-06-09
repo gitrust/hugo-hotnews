@@ -7,8 +7,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href='{{ "images/favicon.ico" | relURL }}'/>
     <!-- Styles -->
-    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $scss := resources.Get "scss/main.scss" }}
+    {{ $style := $scss | css.Sass (dict "targetPath" "css/main.css") | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">

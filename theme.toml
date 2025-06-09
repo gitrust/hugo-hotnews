@@ -8,7 +8,7 @@ description = "A hugo theme that imitates a simple newspaper layout"
 homepage = "http://example.com/"
 tags = ["newspaper","simple","blackwhite","clean","personal","theme","responsive"]
 features = ["favicon","shortcuts"]
-min_version = "0.41.0"
+min_version = "0.128.0"
 
 [author]
   name = "gitrust"
